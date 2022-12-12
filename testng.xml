@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="URL" value="https://www.saucedemo.com/"/>
+    <parameter name="user" value="standard_user"/>
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="itemToBuy" value="Sauce Labs Backpack"/>
+    <parameter name="firstName" value="Marcela"/>
+    <parameter name="lastName" value="Nunez"/>
+    <parameter name="zipCode" value="25904"/>
+    <test verbose="2" name="ShoppingExperienceTest">
+        <classes>
+            <class name="saucedemo.test.ShoppingExperienceTest">
+
+            </class>
+        </classes>
+    </test>
+</suite>
