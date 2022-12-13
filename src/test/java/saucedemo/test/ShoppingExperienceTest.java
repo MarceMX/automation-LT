@@ -1,5 +1,6 @@
 package saucedemo.test;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 import saucedemo.core.Utilities;
 import saucedemo.pages.*;
@@ -48,7 +49,7 @@ public class ShoppingExperienceTest extends Utilities {
 			completePurchase = new CheckoutOverview();
 			completePurchase.finishPurchase();
 		}catch (Exception e){
-			screenshotTake();
+			testOnFailure(e.toString());
 		}
 	}
 	

@@ -10,6 +10,8 @@ import java.util.Locale;
 public class ProductsPage extends Utilities {
 	By productLink = By.className("inventory_item_name");
 	
+	/*	For this exercise I only specified the entry for 1 parameter,
+	the ideal practice is to set a variable that takes n number of products.*/
 	public void selectProduct(String productName){
 		//Select the link
 		driver.findElement(By.linkText(productName)).click();
@@ -17,6 +19,8 @@ public class ProductsPage extends Utilities {
 		clickAddToCart(productName);
 	}
 	
+	/* This method will add to cart the product, check the button Remove will be displayed
+	 once the Add To Cart button is clicked and the element is added to shopping cart*/
 	public void clickAddToCart(String productName){
 		String prodName;
 		String pName;
